@@ -13,8 +13,13 @@ fun printReceipt(title: String, price: Int){
     val discount: Int = calculateDiscount(price)
     val finalPrice: Int = price * (100-discount)/100
 
+    val userNote: String? = null
+    val text = userNote ?: "Tidak ada catatan"
+
     println("RECEIPT")
     println("Judul Game     : $title")
     println("Harga Awal     : $price")
     println("Harga Akhir    : $finalPrice")
+
+    println(text)
 }
