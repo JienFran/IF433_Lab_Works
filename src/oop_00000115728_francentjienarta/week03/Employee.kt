@@ -1,6 +1,6 @@
 package oop_00000115728_francentjienarta.week03
 
-class Employee (val name: String){
+class Employee(val name: String) {
     var salary: Int = 0
         set (value) {
             if (value < 0){
@@ -20,4 +20,7 @@ class Employee (val name: String){
     fun printStatus(){
         println("Karyawan: $name, Rating: $performanceRating")
     }
+
+    val tax: Double
+        get() = salary * 0.1
 }
