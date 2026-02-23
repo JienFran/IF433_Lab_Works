@@ -1,6 +1,7 @@
 package oop_00000115728_francentjienarta.week04
 
 fun main() {
+    println("Task 1")
     println("--- Testing Vehicle ---")
     val generalVehicle = Vehicle(brand = "Sepeda Onthel")
     generalVehicle.honk()
@@ -17,4 +18,16 @@ fun main() {
     tesla.accelerate()
     tesla.honk()
     tesla.openTrunk()
+
+    println()
+
+    println("Task 2")
+    val manager = Manager("Francent", 62_000_000)
+    val developer = Developer("Akbar", 8_000_000, "C++")
+
+    manager.work()
+    println("Bonus Manager: Rp ${manager.calculateBonus()}")
+
+    developer.work()
+    println("Bonus Developer: Rp ${developer.calculateBonus()}")
 }
