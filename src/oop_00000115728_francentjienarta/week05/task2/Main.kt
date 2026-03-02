@@ -9,6 +9,14 @@ fun main() {
     for (method in paymentMethods) {
         println("Pembayaran 75000 menggunakan ${method.accountName}")
         method.processPayment(75000.0)
+
+        if (method is EWallet) {
+            println("Melakukan top up karena saldo kurang.")
+            method.topUp(50000.0)
+            println("Retry pembayaran.")
+            method.processPayment(75000.0)
+        }
+
         println("------------------------------------------------------------")
     }
 }
