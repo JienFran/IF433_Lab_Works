@@ -42,4 +42,6 @@ fun main() {
     }
     println("Unique Pairs:")
     println(uniquePairs)
+
+    //Checkpoint 20
 }
