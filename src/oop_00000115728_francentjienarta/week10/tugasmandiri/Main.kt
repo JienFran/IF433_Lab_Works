@@ -24,3 +24,5 @@ fun main() {
         println("ID: ${it.id}, Amount: ${it.amount}")
     }
 }
+
+//Checkpoint 20
